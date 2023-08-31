@@ -1,0 +1,30 @@
+cabal-version:      2.4
+name:               hsopenssl-test
+version:            0.1
+license:            MIT
+license-file:       LICENSE
+
+copyright:          2023 Thomas Bidne
+author:             Thomas Bidne
+maintainer:         tbidne@protonmail.com
+homepage:           https://github.com/tbidne/hsopenssl-test/
+bug-reports:        https://github.com/tbidne/hsopenssl-test/issues
+synopsis:           Template
+description:        Template
+category:           Template
+
+extra-source-files:
+  README.md
+
+source-repository head
+  type:     git
+  location: https://github.com/tbidne/hsopenssl-test
+
+library
+  exposed-modules:  Lib
+  build-depends:
+    -- so we're sure about the versions
+    , base      ==4.17.1.0
+    , HsOpenSSL ==0.11.7.6
+  hs-source-dirs:   src
+  default-language: Haskell2010
